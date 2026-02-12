@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-800 flex justify-center items-center h-screen">
+    <div class="bg-red-600 px-10 py-16 rounded-md border text-center shadow-lg">
+        <h2 class="text-white text-xl mb-10 shadow-lg capitalize">allrounder.com</h2>
+        <input type="text" id="username" placeholder="enter username" class="px-4 py-2 rounded"><br><br>
+        <input type="password" id="password" placeholder="enter password" class="px-4 py-2 rounded mt-2"><br><br>
+        <button onclick="login()" class="bg-red-500 text-white px-4 py-2 rounded border hover:bg-red-700 hover:text-white mt-4 capitalize">login</button><br><br>
+        <p id="msg" class="text-xl text-white capitalize mt-5 shadow-lg"></p><br><br>
+    </div>
+    <script>
+        function login() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+            if (user === "shakil" && pass === "1234") {
+                document.getElementById("msg"). innerText = "login successfull";   
+                window.location.href = "myhome.html"   
+                   
+             }else {
+                document.getElementById("msg"). innerText = "wrong username and password";
+            console.log(user);   
+                console.log(pass);             }
+        }
+    </script>
+    
+</body>
+</html>

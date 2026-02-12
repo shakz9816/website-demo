@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="flex justify-between items-center px-4 py-4 bg-red-700 ">
+            <div onclick="logo()" class="text-white text-2xl font-bold cursor-pointer">only one</div>
+            <nav>
+                <ul class="flex gap-5 text-white font-semibold capitalize">
+                    <li><a href="#home" class="hover:bg-red-800 px-4 rounded py-2 shadow-lg">home</a></li>
+                    <li><a href="#home" class="hover:bg-red-800 px-4 py-2 rounded shadow-lg">services</a></li>
+                    <li><a href="#home" class="hover:bg-red-800 px-4 py-2 rounded shadow-lg">products</a></li>
+                    <li><a href="#home" class="hover:bg-red-800 px-4 py-2 rounded shadow-lg">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- container section -->
+<div class="bg-red-500 ">
+    <h2 class="text-white text-center pt-10 text-2xl capitalize pb-12">online services</h2>
+    <div class="flex justify-center items-center ">
+        <div class=" hover:bg-red-700 px-12 py-12 bg-red-800 text-white rounded-md  m-4 grid pb-32 ">
+            <p>language training</p>
+            <button onclick="buyproduct()" class="bg-red-600 rounded mt-10 hover:bg-red-500">buy plan</button>
+        </div>
+        <div class="bg-red-800 text-white px-12 py-12 rounded-md m-4">english training</div>
+        <div class="bg-red-800 text-white px-12 py-12 rounded-md m-4">computer training</div>
+    </div>
+    <!-- products section -->
+    <div class="bg-blue-500">
+    <h2 class="text-white text-center pt-10 text-2xl capitalize pb-12">products gallary</h2>
+    <div class="flex justify-center items-center ">
+        <div class="px-12 py-12 bg-indigo-700 text-white rounded-md  m-4">language training</div>
+        <div class="bg-indigo-700 text-white px-12 py-12 rounded-md m-4">english training</div>
+        <div class="bg-indigo-700 text-white px-12 py-12 rounded-md m-4">computer training</div>
+    </div>
+    <!-- emergency section -->
+    <div class="bg-indigo-600">
+    <h2 class="text-white text-center pt-10 text-2xl capitalize pb-12">emergency section </h2>
+    <div class="flex justify-center items-center ">
+        <div class="px-12 py-12 bg-blue-500 text-white rounded-md  m-4">language training</div>
+        <div class="bg-blue-500 text-white px-12 py-12 rounded-md m-4">english training</div>
+        <div class="bg-blue-500 text-white px-12 py-12 rounded-md m-4">computer training</div>
+    </div>
+    <footer class="">
+        <p>&copy;2026 | all right reserved only one</p>
+    </footer>
+
+
+
+    <script>
+        function logo() {
+            window.location.href = "index.html";
+        }
+        function buyproduct() {
+            alert("you have successfully buy this plan");
+        }
+
+    </script>
+    
+</body>
+</html>

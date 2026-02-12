@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="sm">
+    <header>
+        <div class="bg-red-700 px-5 py-4 flex justify-between items-center">
+            <div class="text-white text-2xl font-semibold">faruk store</div>
+            <nav>
+                <ul class="text-white flex gap-5 capitalize font-semibold">
+                    <li><a href="#home" class="hover:bg-red-800  px-5 py-2 rounded shadow-lg">home</a></li>
+                    <li><a href="#home" class="hover:bg-red-800 px-4 py-2 rounded shadow-lg">services</a></li>
+                    <li><a href="#home" class="hover:bg-red-800 px-4 py-2 rounded shadow-lg">products</a></li>
+                    <li><a href="#home" class="hover:bg-red-800 px-4 py-2 rounded shadow-lg">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- container section  -->
+    <div class="bg-red-800 py-28 text-center">
+        <h2 class="text-white text-3xl">welcome to you smart people!</h2>
+        <p class="text-white capitalize mt-10 text-xl">to get all the services you must have signup.</p>
+        <button onclick="signup()"
+            class="bg-white px-4 py-2 rounded mt-10 hover:text-white hover:bg-blue-700 border">signup</button>
+            
+    </div>
+    <div class="bg-blue-600 border">
+        <h2 class="text-white text-center capitalize py-4 text-2xl pt-5">our services</h2>
+        <div class="bg-red-600 flex flex-col sm:flex-row justify-center items-center h-[300px] text-white capitalize">
+            <div class="bg-red-500 px-16 py-16 rounded-md shadow border m-2 cursor-pointer hover:bg-red-400 ">online services</div>
+            <div class="bg-red-500 px-16 py-16 rounded-md border m-2 cursor-pointer">products gallary</div>
+            <div class="bg-red-500 px-16 py-16 border rounded-md m-2 cursor-pointer">emergency services</div>
+        </div>
+    </div>
+    <footer class="bg-red-700 text-white py-6 text-center">
+        <p>&copy;2026 @| all right reserved</p>
+    </footer>
+
+    <script>
+        function signup() {
+            window.location.href = "home.html";
+        }
+    </script>
+
+</body>
+
+</html>
